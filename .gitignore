@@ -1,0 +1,43 @@
+# Avoid accidental upload of the Sketch and Figma design files
+#####################################################
+## Please do not remove lines 5 and 6 - thanks! 🙂 ##
+#####################################################
+*.sketch
+*.fig
+
+# Avoid accidental XD upload if you convert the design file
+###############################################
+## Please do not remove line 12 - thanks! 🙂 ##
+###############################################
+*.xd
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+.prettierignore
+
+
+# My custom Gitignore
+# Node modules
+node_modules/
+
+# Parcel generated files
+.cache/
+dist/
+.parcel-cache/
+
+# Environment files
+.env
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# OS generated files
+Thumbs.db
+
+# Ignore Tailwind CSS build output if you're generating it manually
+/tailwind.output.css

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- JS Import -->
+    <script type="module" src="script.js"></script>
+
+    <title>Skilled e-learning landing page</title>
+  </head>
+  <!-- <body class="bg-pastel-light-pink"> -->
+  <body>
+    <!-- Templates -->
+    <template id="card-template">
+      <article class="relative rounded-[10px] bg-white px-7 pb-8 pt-14">
+        <img
+          src="./assets/icon-animation.svg"
+          class="absolute top-0 h-14 w-14 -translate-y-1/2"
+        />
+        <h2 class="mb-4 text-dark-blue xl:mb-6"></h2>
+        <p class="mb-6 text-gray"></p>
+        <a class="text-lg font-bold leading-6 text-pastel-dark-pink" href="#"
+          >Get Started</a
+        >
+      </article>
+    </template>
+
+    <header class="overflow-hidden md:relative">
+      <div
+        class="container-margin mb-[2.375rem] mt-4 flex items-center justify-between md:mb-[6.1875rem] md:mt-6 xl:mb-[11.125rem]"
+      >
+        <img
+          class="w-[5.563rem]"
+          src="assets/logo-dark.svg"
+          alt="Skilled Logo"
+        />
+        <a
+          class="btn rounded-[28px] bg-dark-blue px-6 py-3 text-white hover:bg-soft-blue"
+          href="#"
+          >Get Started</a
+        >
+      </div>
+      <div
+        class="container-margin mb-7 md:mb-[11.625rem] md:w-[24.875rem] xl:mb-60 xl:w-[28.5625rem]"
+      >
+        <h1
+          class="mb-[1.625rem] leading-tight text-dark-blue xl:mb-[1.8125rem]"
+        >
+          Maximize skill, minimize budget
+        </h1>
+        <p class="mb-6 text-gray xl:mb-[2.5rem]">
+          Our modern courses across a range of
+          <span class="whitespace-nowrap">in-demand</span> skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <a
+          class="btn inline-block rounded-[31.5px] bg-gradient-to-b from-orange to-pink-1 px-10 py-4 text-white hover:opacity-50"
+          href="#"
+          >Get Started</a
+        >
+      </div>
+      <picture>
+        <!-- For high-density desktop screens -->
+        <source
+          srcset="./assets/image-hero-desktop@2x.webp"
+          type="image/webp"
+          media="(min-width: 1024px) and (min-resolution: 2dppx)"
+        />
+        <source
+          srcset="./assets/image-hero-desktop@2x.png"
+          type="image/png"
+          media="(min-width: 1024px) and (min-resolution: 2dppx)"
+        />
+
+        <!-- For normal desktop screens -->
+        <source
+          srcset="./assets/image-hero-desktop.webp"
+          type="image/webp"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="./assets/image-hero-desktop.png"
+          type="image/png"
+          media="(min-width: 1024px)"
+        />
+
+        <!-- For high-density tablet screens -->
+        <source
+          srcset="./assets/image-hero-tablet@2x.webp"
+          type="image/webp"
+          media="(min-width: 768px) and (min-resolution: 2dppx)"
+        />
+        <source
+          srcset="./assets/image-hero-tablet@2x.png"
+          type="image/png"
+          media="(min-width: 768px) and (min-resolution: 2dppx)"
+        />
+
+        <!-- For normal tablet screens -->
+        <source
+          srcset="./assets/image-hero-tablet.webp"
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./assets/image-hero-tablet.png"
+          type="image/png"
+          media="(min-width: 768px)"
+        />
+
+        <!-- For high-density mobile screens -->
+        <source
+          srcset="./assets/image-hero-mobile@2x.webp"
+          type="image/webp"
+          media="(min-resolution: 2dppx)"
+        />
+        <source
+          srcset="./assets/image-hero-mobile@2x.png"
+          type="image/png"
+          media="(min-resolution: 2dppx)"
+        />
+
+        <!-- For normal mobile screens -->
+        <source srcset="./assets/image-hero-mobile.webp" type="image/webp" />
+        <source srcset="./assets/image-hero-mobile.png" type="image/png" />
+
+        <!-- Fallback -->
+        <img
+          class="md:absolute md:-right-[17rem] md:-top-[4rem] md:w-[40rem] xl:-right-[20rem] xl:-top-[6rem] xl:w-[62rem]"
+          src="./assets/image-hero-mobile.png"
+          alt="Hero Image"
+        />
+      </picture>
+    </header>
+    <section
+      class="bg-gradient-to-b from-white to-soft-blue-transparent pb-20 md:pb-[5.375rem] xl:pb-[8.75rem]"
+    >
+      <div
+        id="features-section"
+        class="container-margin grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-2.5 md:gap-y-14 xl:grid-cols-3 xl:gap-x-[1.875rem] xl:gap-y-[5rem]"
+      >
+        <p
+          class="rounded-[10px] bg-gradient-to-b from-orange to-pink-1 px-7 pb-8 pt-6 text-2xl font-extrabold text-white md:px-8 md:py-14 xl:px-8 xl:py-16 xl:text-[2rem]/tight"
+        >
+          Check out our most popular courses!
+        </p>
+      </div>
+    </section>
+    <footer class="flex h-[120px] w-full items-center bg-dark-blue">
+      <div class="container-margin flex w-full items-center justify-between">
+        <img
+          class="w-[5.563rem]"
+          src="./assets/logo-light.svg"
+          alt="Skilled Logo"
+        />
+        <a
+          class="btn rounded-[28px] bg-gradient-to-b from-blue to-pink-2 px-6 py-3 text-white hover:opacity-50"
+          href="#"
+          >Get Started</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
